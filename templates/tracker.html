@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Tracker & Metrics - Orgpedia</title>
+
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="c/output.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body class="bg-gray-100 text-[#333333]">
+        <!-- Header -->
+        <header>
+            <div class="bg-black text-gray-50 h-[98px] flex top-0 items-center px-2 lg:px-4 py-2.5 border-b-[9px] border-blue-500 fixed z-50 w-full">
+                <div class="container max-w-7xl flex flex-wrap justify-between items-center mx-auto">
+                    <!-- Logo -->
+                    <a href="index.html" class="flex items-center">
+                        <div class="w-[53px] h-[53px] bg-white flex justify-center items-center rounded-full mr-2.5">
+                            <p class="text-[30px] text-black w-[53px] h-[53px] text-center"><span class="text-blue-500">o</span>p</p>
+                        </div>
+                        <div class="text-[45px] text-white flex flex-col items-center justify-center">
+                            <img src="i/l-en.svg" class="w-32 xs:w-48 lg:w-full" alt="Orgpedia Logo">
+                            <p class="text-xs xs:text-sm text-right -mb-3 lg:mb-0 -mr-9 xs:-mr-[70px] lg:-mr-20 xs:-mt-0.5">Information Extraction for Public Good</p>
+                        </div>
+                    </a>
+
+                    <!-- Top Navigation Links -->
+                    <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-300">
+                        <a href="projects.html" class="hover:text-blue-400 hover:underline">Projects</a>
+                        <a href="tracker.html" class="text-blue-400 font-bold hover:underline">Data Tracker</a>
+                        <a href="en/ministry.html" class="hover:text-blue-400 hover:underline">Council of Ministers</a>
+                        <a href="annual_returns.html" class="hover:text-blue-400 hover:underline">Annual Returns</a>
+                        <a href="https://github.com/orgpedia" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 hover:text-white">
+                            <span>GitHub</span>
+                            <img src="i/gh.svg" class="w-4 h-4 inline" alt="GitHub">
+                        </a>
+                    </nav>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden flex items-center">
+                        <a href="index.html" class="text-xs bg-gray-700 text-white px-2.5 py-1.5 rounded mr-2">Home</a>
+                        <a href="projects.html" class="text-xs bg-blue-500 text-white px-2.5 py-1.5 rounded">Projects</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Container -->
+        <div class="pt-[118px] max-w-7xl container mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+
+            <!-- Breadcrumb Navigation -->
+            <div class="flex items-center justify-between text-blue-500 text-sm mb-4 py-2 border-b border-gray-300">
+                <div class="flex items-center gap-2">
+                    <a href="index.html" class="hover:underline">Home</a>
+                    <span><img src="i/bc.svg" class="w-4 h-4 inline" alt=">"></span>
+                    <span class="font-bold text-black">Document Procesing Tracker</span>
+                </div>
+            </div>
+
+            <!-- Page Intro Banner -->
+            <section class="bg-white rounded border border-gray-300 shadow-sm p-6 mb-8">
+                <div class="max-w-3xl">
+                    <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Orgpedia Document Processing Tracker</h1>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+		      Follow how government documents are transformed into accessible, usable data — from document ingestion and machine-powered extraction to the creation of data products and easy-to-use websites..
+                    </p>
+                </div>
+            </section>
+
+            <!-- 3 High-Level Numbers Overview -->
+            <section class="mb-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
+                    <!-- Metric 1 -->
+                    <div class="bg-white rounded border-t-4 border-blue-500 border-x border-b border-gray-300 shadow-sm p-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-500">Funnel Ingestion</span>
+                        <div class="text-4xl font-extrabold text-gray-900 my-2">185,248</div>
+                        <h2 class="text-base font-bold text-blue-600 mb-1">Documents Processed</h2>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Total volume of government documents downloaded, organized and made available on Github, Huggingface and Archive.org.
+                        </p>
+                    </div>
+
+                    <!-- Metric 2 -->
+                    <div class="bg-white rounded border-t-4 border-blue-500 border-x border-b border-gray-300 shadow-sm p-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-500">AI Extraction</span>
+                        <div class="text-4xl font-extrabold text-gray-900 my-2">104,509</div>
+                        <h2 class="text-base font-bold text-blue-600 mb-1">Information Extracted</h2>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+			  Total volume of documents from which structured records and relevant entities are extracted and translated.
+                        </p>
+                    </div>
+
+                    <!-- Metric 3 -->
+                    <div class="bg-white rounded border-t-4 border-blue-500 border-x border-b border-gray-300 shadow-sm p-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-500">Public Presentation</span>
+                        <div class="text-4xl font-extrabold text-gray-900 my-2">102,704</div>
+                        <h2 class="text-base font-bold text-blue-600 mb-1">Information Presented</h2>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+			  Volume of documents whose entities are presented on websites. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Detailed Breakup Section 1: Documents Processed -->
+            <section class="bg-white rounded border border-gray-300 shadow-sm p-6 sm:p-8 mb-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-full bg-blue-500 text-white font-bold flex items-center justify-center text-sm">1</span>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">Documents Processed: Detailed Breakdown (185,248)</h2>
+                        <p class="text-xs text-gray-500">Source collections, formats, and OCR pipeline throughput.</p>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto mb-6">
+                    <table class="w-full text-left text-xs border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100 border-b border-gray-300 text-gray-700 font-bold">
+                                <th class="p-3">Collection / Source</th>
+                                <th class="p-3">Issuing Authority</th>
+                                <th class="p-3">Time Range</th>
+                                <th class="p-3">Estimated Docs</th>
+                                <th class="p-3">Repositories</th>
+                                <th class="p-3">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="p-3 font-semibold text-gray-900">Cabinet Secretariat (cabsec)</td>
+                                <td class="p-3 text-gray-600">Cabinet Secretariat, Government of India</td>
+                                <td class="p-3 text-gray-600">1947 – Present</td>
+                                <td class="p-3 font-bold text-gray-900">904 docs</td>
+                                <td class="p-3">
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/orgpedia/cabsec" target="_blank" rel="noopener noreferrer" title="GitHub" class="hover:opacity-75"><img src="i/gh.svg" class="w-4 h-4 inline" alt="GitHub"></a>
+                                        <a href="https://huggingface.co/orgpedia" target="_blank" rel="noopener noreferrer" title="HuggingFace" class="hover:opacity-75"><img src="i/hf.svg" class="w-4 h-4 inline" alt="HuggingFace"></a>
+                                        <a href="https://archive.org/details/@orgpedia" target="_blank" rel="noopener noreferrer" title="Archive.org" class="hover:opacity-75"><img src="i/archive.svg" class="w-4 h-4 inline" alt="Archive.org"></a>
+                                    </div>
+                                </td>
+                                <td class="p-3 text-gray-700 font-medium">Upto date, Manual upload</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold text-gray-900">Maharashtra Government Resolutions (mahGRs)</td>
+                                <td class="p-3 text-gray-600">Mantralaya, Govt of Maharashtra</td>
+                                <td class="p-3 text-gray-600">1961 – Present</td>
+                                <td class="p-3 font-bold text-gray-900">173,098 GRs</td>
+                                <td class="p-3">
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/orgpedia/mahgetGR" target="_blank" rel="noopener noreferrer" title="GitHub" class="hover:opacity-75"><img src="i/gh.svg" class="w-4 h-4 inline" alt="GitHub"></a>
+                                        <a href="https://huggingface.co/orgpedia" target="_blank" rel="noopener noreferrer" title="HuggingFace" class="hover:opacity-75"><img src="i/hf.svg" class="w-4 h-4 inline" alt="HuggingFace"></a>
+                                        <a href="https://archive.org/details/@orgpedia" target="_blank" rel="noopener noreferrer" title="Archive.org" class="hover:opacity-75"><img src="i/archive.svg" class="w-4 h-4 inline" alt="Archive.org"></a>
+                                    </div>
+                                </td>
+                                <td class="p-3 text-gray-700 font-medium">Upto date, Daily upload</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold text-gray-900">IAS Civil List(iasCivilList)</td>
+                                <td class="p-3 text-gray-600">Department of Personnel and Training, Government of India</td>
+                                <td class="p-3 text-gray-600"> 1955 – Present</td>
+                                <td class="p-3 font-bold text-gray-900"> 69 docs</td>
+                                <td class="p-3">
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/orgpedia/doptIASCivil" target="_blank" rel="noopener noreferrer" title="GitHub" class="hover:opacity-75"><img src="i/gh.svg" class="w-4 h-4 inline" alt="GitHub"></a>
+                                        <a href="https://huggingface.co/orgpedia" target="_blank" rel="noopener noreferrer" title="HuggingFace" class="hover:opacity-75"><img src="i/hf.svg" class="w-4 h-4 inline" alt="HuggingFace"></a>
+                                        <a href="https://archive.org/details/@orgpedia" target="_blank" rel="noopener noreferrer" title="Archive.org" class="hover:opacity-75"><img src="i/archive.svg" class="w-4 h-4 inline" alt="Archive.org"></a>
+                                    </div>
+                                </td>
+                                <td class="p-3 text-gray-700 font-medium">Upto date, Manual upload</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold text-gray-900">Municipal Corporation Circulars (punePMC)</td>
+                                <td class="p-3 text-gray-600">Pune Municipal Corporation</td>
+                                <td class="p-3 text-gray-600">2018 – Present</td>
+                                <td class="p-3 font-bold text-gray-900">9332 circulars</td>
+                                <td class="p-3">
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/orgpedia/punepmc" target="_blank" rel="noopener noreferrer" title="GitHub" class="hover:opacity-75"><img src="i/gh.svg" class="w-4 h-4 inline" alt="GitHub"></a>
+                                        <a href="https://huggingface.co/orgpedia" target="_blank" rel="noopener noreferrer" title="HuggingFace" class="hover:opacity-75"><img src="i/hf.svg" class="w-4 h-4 inline" alt="HuggingFace"></a>
+                                        <a href="https://archive.org/details/@orgpedia" target="_blank" rel="noopener noreferrer" title="Archive.org" class="hover:opacity-75"><img src="i/archive.svg" class="w-4 h-4 inline" alt="Archive.org"></a>
+                                    </div>
+                                </td>
+                                <td class="p-3 text-gray-700 font-medium">Upto date, Daily upload</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold text-gray-900"> Maharashtra Legislature Starred, and Unstarred Questions(mahmls) </td>
+                                <td class="p-3 text-gray-600">Mahrashtra Legislature</td>
+                                <td class="p-3 text-gray-600">2012 - Present</td>
+                                <td class="p-3 font-bold text-gray-900">1,845 docs</td>
+                                <td class="p-3">
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/orgpedia/mahmls" target="_blank" rel="noopener noreferrer" title="GitHub" class="hover:opacity-75"><img src="i/gh.svg" class="w-4 h-4 inline" alt="GitHub"></a>
+                                        <a href="https://huggingface.co/orgpedia" target="_blank" rel="noopener noreferrer" title="HuggingFace" class="hover:opacity-75"><img src="i/hf.svg" class="w-4 h-4 inline" alt="HuggingFace"></a>
+                                        <a href="https://archive.org/details/@orgpedia" target="_blank" rel="noopener noreferrer" title="Archive.org" class="hover:opacity-75"><img src="i/archive.svg" class="w-4 h-4 inline" alt="Archive.org"></a>
+                                    </div>
+                                </td>
+                                <td class="p-3 text-gray-700 font-medium">Upto date, uploaded after session</td>
+                            </tr>
+			    
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded border border-gray-200 text-xs text-gray-700 leading-relaxed">
+                    <b>Ingestion Pipeline Details:</b> Each document is downoaded, it is attached the metadata from the site and then uploaded on wayback machines, archive.org and huggingface as dataset. The code that does this is available on Github.
+                </div>
+            </section>
+
+            <!-- Detailed Breakup Section 2: Information Extracted -->
+            <section class="bg-white rounded border border-gray-300 shadow-sm p-6 sm:p-8 mb-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-full bg-blue-500 text-white font-bold flex items-center justify-center text-sm">2</span>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">Information Extracted: Detailed Breakdown (104,509)</h2>
+                        <p class="text-xs text-gray-500">Relevant entities are extracted from documents and then translated</p>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto mb-6">
+                    <table class="w-full text-left text-xs border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100 border-b border-gray-300 text-gray-700 font-bold">
+                                <th class="p-3">Collection / Source</th>
+                                <th class="p-3">Documents</th>
+                                <th class="p-3">Entities</th>
+                                <th class="p-3">Translations</th>
+                                <th class="p-3">Repositories</th>
+                                <th class="p-3">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="p-3 font-semibold text-gray-900">Cabinet Secretariat (cabsec)</td>
+                                <td class="p-3 font-bold text-gray-900">904 docs</td>
+                                <td class="p-3 text-gray-600">4,282 tenures, 927 ministers</td>
+                                <td class="p-3 text-gray-600"> 22 languages</td>
+                                <td class="p-3">
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/orgpedia/cabsec" target="_blank" rel="noopener noreferrer" title="GitHub" class="hover:opacity-75"><img src="i/gh.svg" class="w-4 h-4 inline" alt="GitHub"></a>
+                                    </div>
+                                </td>
+                                <td class="p-3 text-gray-700 font-medium">Upto date (Oct 2026)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold text-gray-900">Maharashtra Government Resolutions (mahGRs)</td>
+                                <td class="p-3 font-bold text-gray-900">101, 800 GRs</td>
+                                <td class="p-3 text-gray-600">order number, locations and INR amounts on all</td>
+                                <td class="p-3 text-gray-600">translated to English</td>				
+                                <td class="p-3">
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/orgpedia/mahgetGR" target="_blank" rel="noopener noreferrer" title="GitHub" class="hover:opacity-75"><img src="i/gh.svg" class="w-4 h-4 inline" alt="GitHub"></a>
+                                    </div>
+                                </td>
+                                <td class="p-3 text-gray-700 font-medium">Upto date</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold text-gray-900">Maharashtra Legislature Starred, and Unstarred Questions (mahmls)</td>
+                                <td class="p-3 font-bold text-gray-900">1,845 docs</td>
+                                <td class="p-3 text-gray-600">745,916 questions</td>
+                                <td class="p-3 text-gray-600">translated to English</td>
+                                <td class="p-3">
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/orgpedia/mahmls" target="_blank" rel="noopener noreferrer" title="GitHub" class="hover:opacity-75"><img src="i/gh.svg" class="w-4 h-4 inline" alt="GitHub"></a>
+                                    </div>
+                                </td>
+                                <td class="p-3 text-gray-700 font-medium">Dec 2025</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded border border-gray-200 text-xs text-gray-700 leading-relaxed">
+                    <b>GovDoc Layer Architecture:</b> In GovDoc 3.1, every entity span is permanently anchored to words on the page. Line builders, block builders, and table finders group words without destroying entity provenance, allowing extraction tools to be upgraded without breaking downstream entity links.
+                </div>
+            </section>
+
+            <!-- Detailed Breakup Section 3: Information Presented -->
+            <section class="bg-white rounded border border-gray-300 shadow-sm p-6 sm:p-8 mb-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-full bg-blue-500 text-white font-bold flex items-center justify-center text-sm">3</span>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">Information Presented: Detailed Breakdown (102,704)</h2>
+                        <p class="text-xs text-gray-500">Verified public knowledge, interactive timelines, and multi-lingual access.</p>
+                    </div>
+                </div>
+
+                <!-- Two-Column Cards Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <!-- Card (a): Ministers of India -->
+                    <div class="bg-gray-50 rounded border border-gray-300 p-5 flex flex-col justify-between hover:shadow-sm transition">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1.5">
+                                <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">Flagship Portal</span>
+                                <span class="text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded">Live</span>
+                            </div>
+                            <h3 class="text-base font-bold text-gray-900 mb-1">Ministers of India (1947–To Date)</h3>
+                            <p class="text-xs text-gray-500 mb-3">Central Cabinet Secretariat (1947–Present)</p>
+                            <img src="i/cover-pager-img.png" alt="Ministers of India" class="w-full h-52 sm:h-56 object-cover rounded border border-gray-200 mb-4">
+                            <div class="grid grid-cols-2 gap-3 bg-white p-3 rounded border border-gray-200 mb-4 text-xs">
+                                <div>
+                                    <span class="text-gray-500 block">Documents</span>
+                                    <span class="font-bold text-gray-900 text-sm">904 docs</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500 block">Entities</span>
+                                    <span class="font-bold text-gray-900 text-sm">3,885+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-gray-200 flex items-center justify-between">
+                            <a href="en/ministry.html" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs px-3.5 py-1.5 rounded shadow-sm inline-block">Explore Council of Ministers &rarr;</a>
+                            <span class="text-xs text-gray-500">22 Languages</span>
+                        </div>
+                    </div>
+
+                    <!-- Card (b): Weekly Summary of Maharashtra GRs -->
+                    <div class="bg-gray-50 rounded border border-gray-300 p-5 flex flex-col justify-between hover:shadow-sm transition">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1.5">
+                                <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">State Governance</span>
+                                <span class="text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded">Weekly Monitor</span>
+                            </div>
+                            <h3 class="text-base font-bold text-gray-900 mb-1">Weekly Summary of Maharashtra Government Resolutions (GRs)</h3>
+                            <p class="text-xs text-gray-500 mb-3">Mantralaya, Government of Maharashtra</p>
+                            <img src="i/mantralay.png" alt="Maharashtra GR Summary" class="w-full h-52 sm:h-56 object-cover rounded border border-gray-200 mb-4">
+                            <div class="grid grid-cols-2 gap-3 bg-white p-3 rounded border border-gray-200 mb-4 text-xs">
+                                <div>
+                                    <span class="text-gray-500 block">Documents</span>
+                                    <span class="font-bold text-gray-900 text-sm">173,098 GRs</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-500 block">Entities</span>
+                                    <span class="font-bold text-gray-900 text-sm">—</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-gray-200 flex items-center justify-between">
+                            <a href="https://mahsummary.orgpedia.in/en/index.html" target="_blank" rel="noopener noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs px-3.5 py-1.5 rounded shadow-sm inline-block">Open Maharashtra GR Summary Portal &rarr;</a>
+                            <span class="text-xs text-gray-500">Weekly Updates</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded border border-gray-200 text-xs text-gray-700 leading-relaxed">
+                    <b>Open Data Deliverables:</b> In addition to web portals, data is packaged for developers via Python package (`pip install orgpedia_cabsec`), CSV summaries, and JSON schema-validated outputs in GitHub repositories.
+                </div>
+            </section>
+
+            <!-- Target Roadmap Section -->
+            <section class="bg-white rounded border border-gray-300 shadow-sm p-6 sm:p-8 mb-8">
+                <h2 class="text-xl font-bold text-gray-900 mb-4">Processing Milestones & Roadmap</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-3 bg-green-50 rounded border border-green-200 text-xs">
+                        <div class="flex items-center gap-3">
+                            <span class="text-green-600 font-bold">&check;</span>
+                            <div>
+                                <span class="font-bold text-gray-900">Milestone 1: Central Cabinet History (1947–2026)</span>
+                                <p class="text-gray-500">Full Council of Ministers from Independence to present day across 22 languages.</p>
+                            </div>
+                        </div>
+                        <span class="font-bold text-green-700">Completed</span>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3 bg-blue-50 rounded border border-blue-200 text-xs">
+                        <div class="flex items-center gap-3">
+                            <span class="text-blue-600 font-bold">&check;</span>
+                            <div>
+                                <span class="font-bold text-gray-900">Milestone 2: 250,000 Documents Ingested</span>
+                                <p class="text-gray-500">Maharashtra GR collection + Cabinet Secretariat orders + indicGovBench release.</p>
+                            </div>
+                        </div>
+                        <span class="font-bold text-blue-700">Current (Live)</span>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded border border-gray-200 text-xs">
+                        <div class="flex items-center gap-3">
+                            <span class="text-gray-400 font-bold">&#9675;</span>
+                            <div>
+                                <span class="font-bold text-gray-900">Milestone 3: 500,000 Documents & Multi-State Expansion</span>
+                                <p class="text-gray-500">Ingesting state gazettes for Karnataka, Gujarat, and Tamil Nadu.</p>
+                            </div>
+                        </div>
+                        <span class="font-bold text-gray-500">Target Q2 2027</span>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded border border-gray-200 text-xs">
+                        <div class="flex items-center gap-3">
+                            <span class="text-gray-400 font-bold">&#9675;</span>
+                            <div>
+                                <span class="font-bold text-gray-900">Milestone 4: 1,000,000 Documents & Sovereign Indic DPI</span>
+                                <p class="text-gray-500">National-scale gazette indexing and community review studio deployment.</p>
+                            </div>
+                        </div>
+                        <span class="font-bold text-gray-500">Target Q4 2027</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="bg-gray-200 p-5 z-50 relative border-t border-gray-300">
+                <div class="container max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-gray-600 text-xs">
+                    <div class="flex items-center gap-3">
+                        <img src="i/lf-en.svg" alt="Orgpedia Logo" class="h-6">
+                        <span>&bull;</span>
+                        <a href="disclaimer.html" class="hover:underline">Disclaimer</a>
+                        <span>&bull;</span>
+                        <a href="annual_returns.html" class="hover:underline">Annual Returns</a>
+                        <span>&bull;</span>
+                        <a href="mailto:info@orgpedia.in?subject=Tracker Metrics Feedback" class="hover:underline">Report an Error</a>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div onclick="location.href='https://github.com/orgpedia';" style="cursor: pointer;" class="flex items-center gap-1.5 hover:underline">
+                            <span>View on GitHub</span>
+                            <img src="i/gh.svg" class="w-4 h-4" alt="GitHub">
+                        </div>
+                        <div class="flex gap-1 items-center" style="cursor: pointer;" onclick="location.href='https://creativecommons.org/licenses/by/4.0/'">
+                            <img src="i/cc-1.svg" class="h-4" alt="CC">
+                            <img src="i/cc-2.svg" class="h-4" alt="BY">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "4b28ac948b94411393435f9ff3e233ef"}'></script>
+        </footer>
+    </body>
+
+</html>
