@@ -5,96 +5,311 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Orgpedia: Information Extraction for Public Good</title>
+        <title>Orgpedia Foundation - Annual Returns & Statutory Disclosures</title>
 
         <!-- CSS Link -->
         <link rel="stylesheet" href="c/output.css">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">	
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
 
-    <body>
+    <body class="bg-gray-100 text-[#333333]">
         <!-- Header -->
         <header>
-            <div
-                class="bg-black text-gray-50 h-[98px] flex top-0 items-center px-2 lg:px-4 py-2.5 border-b-[9px] border-blue-500 fixed z-50 w-full">
-                <div class="container flex flex-wrap justify-center xs:justify-between items-center mx-auto ">
+            <div class="bg-black text-gray-50 h-[98px] flex top-0 items-center px-2 lg:px-4 py-2.5 border-b-[9px] border-blue-500 fixed z-50 w-full">
+                <div class="container max-w-7xl flex flex-wrap justify-between items-center mx-auto">
                     <!-- Logo -->
-                    <a class="flex items-center">
+                    <a href="index.html" class="flex items-center">
                         <div class="w-[53px] h-[53px] bg-white flex justify-center items-center rounded-full mr-2.5">
-                            <p class="text-[30px] text-black w-[53px] h-[53px] text-center"><span
-                                    class="text-blue-500">o</span>p
-                            </p>
+                            <p class="text-[30px] text-black w-[53px] h-[53px] text-center"><span class="text-blue-500">o</span>p</p>
                         </div>
                         <div class="text-[45px] text-white flex flex-col items-center justify-center">
-                            <img src="i/l-en.svg" class="w-32 xs:w-48 lg:w-full">
-                            <p
-                                class="text-xs xs:text-sm text-right -mb-3 lg:mb-0 -mr-9 xs:-mr-[70px] lg:-mr-20 xs:-mt-0.5">
-                                Information Extraction for Public Good</p>
+                            <img src="i/l-en.svg" class="w-32 xs:w-48 lg:w-full" alt="Orgpedia Logo">
+                            <p class="text-xs xs:text-sm text-right -mb-3 lg:mb-0 -mr-9 xs:-mr-[70px] lg:-mr-20 xs:-mt-0.5">Information Extraction for Public Good</p>
                         </div>
                     </a>
+
+                    <!-- Top Navigation Links -->
+                    <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-300">
+                        <a href="projects.html" class="hover:text-blue-400 hover:underline">Projects</a>
+                        <a href="tracker.html" class="hover:text-blue-400 hover:underline">Document Tracker</a>
+                        <a href="en/ministry.html" class="hover:text-blue-400 hover:underline">Council of Ministers</a>
+                        <a href="annual_returns.html" class="text-white border-b-2 border-blue-500 pb-0.5">Annual Returns</a>
+                        <a href="https://github.com/orgpedia" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 hover:text-white">
+                            <span>GitHub</span>
+                            <img src="i/gh.svg" class="w-4 h-4 inline" alt="GitHub">
+                        </a>
+                    </nav>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden flex items-center">
+                        <a href="projects.html" class="text-xs bg-blue-500 text-white px-2.5 py-1.5 rounded mr-2">Projects</a>
+                        <a href="tracker.html" class="text-xs bg-gray-700 text-white px-2.5 py-1.5 rounded">Tracker</a>
+                    </div>
                 </div>
             </div>
         </header>
 
         <!-- Main Container -->
-        <div class="flex p-5 gap-5 pt-[120px] container mx-auto">
+        <div class="pt-[118px] max-w-7xl container mx-auto px-4 sm:px-6 lg:px-8 mb-12">
 
-            <main class="w-full min-h-screen">
-                <section>
-                  <div class="container mx-auto lg:p-5">
-                    <div>
-                      <div class="flex flex-col md:flex-row gap-6 mb-8">
-                        <div class="flex-1">
+            <!-- Breadcrumb Navigation -->
+            <div class="flex items-center justify-between text-blue-500 text-sm mb-6 py-2 border-b border-gray-300">
+                <div class="flex items-center gap-2">
+                    <a href="index.html" class="hover:underline">Home</a>
+                    <span><img src="i/bc.svg" class="w-4 h-4 inline" alt=">"></span>
+                    <span class="font-bold text-black">Annual Returns & Statutory Filings</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="index.html#volunteer" class="text-xs bg-blue-500 hover:bg-blue-600 text-white font-medium px-3 py-1.5 rounded shadow-sm">Volunteer with Us &rarr;</a>
+                </div>
+            </div>
 
-                          <div class="text-lg font-semibold text-white p-2 bg-blue-500">
-                            <span>Annual Returns</span>
-                          </div>
-                          <div class="px-7 py-4 bg-gray-200 min-h-[300px]">
-			    <ul class="text-blue-500">
-			      <li><a href="orgpedia_annual_return_22-23.pdf">Financial Year: 2022-23</a></li>
-			    </ul>
-			  </div>
-
-                          </div>
+            <!-- Top Banner: Non-Profit Operating Statement -->
+            <div class="bg-blue-50 border border-blue-200 rounded p-6 mb-8 shadow-sm">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            &hearts;
                         </div>
-		      </div>
-		    </div>
-		  </div>
-                </section>
-            </main>
+                        <div>
+                            <div class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded mb-1">Non-Profit Mission</div>
+                            <p class="text-sm sm:text-base text-gray-800 leading-relaxed font-medium">
+                                Orgpedia Foundation operates with zero funding and no revenue, paid employees, or office space. If you’d like to contribute to our mission, all we ask is your time, skills, and willingness to make a difference.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="mailto:info@orgpedia.in?subject=Volunteering with Orgpedia" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs px-5 py-2.5 rounded shadow-sm whitespace-nowrap self-start sm:self-center transition">Volunteer with Us &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Title & Context Section -->
+            <section class="bg-white rounded border border-gray-300 shadow-sm p-6 sm:p-8 mb-8">
+                <div class="max-w-4xl">
+                    <div class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-1 rounded mb-3">Public Governance & Transparency</div>
+                    <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight mb-3">Orgpedia Foundation Annual Returns</h1>
+                    <p class="text-sm sm:text-base text-gray-700 leading-relaxed mb-3">
+                        <b>Orgpedia Foundation</b> is a registered Section 8 (non-profit) company incorporated on <b>31 January 2022</b> under the Companies Act, 2013, with the Registrar of Companies (ROC Pune, Maharashtra).
+                    </p>
+                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                        In accordance with Section 92 of the Companies Act, 2013 and rule 11 of the Companies (Management and Administration) Rules, 2014, our audited Annual Returns (Form MGT-7) filed with the Ministry of Corporate Affairs (MCA), Government of India, are made publicly available below.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Key Governance & Entity Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-white rounded border border-gray-300 shadow-sm p-4 hover:shadow-md transition">
+                    <span class="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-1">Corporate Identity (CIN)</span>
+                    <div class="text-sm sm:text-base font-extrabold text-gray-900 font-mono">U80902PN2022NPL208087</div>
+                    <span class="text-xs text-gray-500 mt-1 block">ROC Pune &bull; Section 8 Non-Profit</span>
+                </div>
+                <div class="bg-white rounded border border-gray-300 shadow-sm p-4 hover:shadow-md transition">
+                    <span class="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-1">Incorporation Date</span>
+                    <div class="text-sm sm:text-base font-extrabold text-gray-900">31 January 2022</div>
+                    <span class="text-xs text-gray-500 mt-1 block">Company limited by shares</span>
+                </div>
+                <div class="bg-white rounded border border-gray-300 shadow-sm p-4 hover:shadow-md transition">
+                    <span class="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-1">Annual Revenue / Funding</span>
+                    <div class="text-sm sm:text-base font-extrabold text-blue-600">₹0 (Zero)</div>
+                    <span class="text-xs text-gray-500 mt-1 block">100% Volunteer Driven</span>
+                </div>
+                <div class="bg-white rounded border border-gray-300 shadow-sm p-4 hover:shadow-md transition">
+                    <span class="text-xs font-bold uppercase tracking-wider text-gray-500 block mb-1">Paid Staff / Office</span>
+                    <div class="text-sm sm:text-base font-extrabold text-gray-900">Zero Overhead</div>
+                    <span class="text-xs text-gray-500 mt-1 block">All volunteer contributions</span>
+                </div>
+            </div>
+
+            <!-- Annual Returns List Section -->
+            <section class="mb-10">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
+                    <div>
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900">Form MGT-7 Annual Returns</h2>
+                        <p class="text-sm text-gray-600">Official annual returns submitted to the Ministry of Corporate Affairs (MCA).</p>
+                    </div>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded border border-gray-300 font-medium mt-2 sm:mt-0">3 Filings Published</span>
+                </div>
+
+                <div class="space-y-6">
+
+                    <!-- Return Card 1: FY 2024-25 -->
+                    <div class="bg-white rounded border-t-4 border-blue-500 border-x border-b border-gray-300 shadow-sm p-6 sm:p-8 hover:shadow-md transition">
+                        <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 pb-4 border-b border-gray-200">
+                            <div>
+                                <div class="flex flex-wrap items-center gap-2 mb-1">
+                                    <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">Latest Filing</span>
+                                    <span class="text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded">Form No. MGT-7</span>
+                                    <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded">18 Pages</span>
+                                </div>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-900">Financial Year 2024–25 Annual Return</h3>
+                                <p class="text-xs sm:text-sm text-gray-500">Period: 01 April 2024 to 31 March 2025 &bull; AGM Date: 30 September 2025</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <a href="annual_reports/orgpedia_annual_return_24-25.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded shadow-sm transition">
+                                    <span>Download PDF (3.5 MB)</span>
+                                    <span>&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 text-xs">
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Turnover</span>
+                                <span class="text-sm font-bold text-gray-900">₹0</span>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Net Worth</span>
+                                <span class="text-sm font-bold text-gray-900">-₹93,600</span>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Paid-up Capital</span>
+                                <span class="text-sm font-bold text-gray-900">₹1,00,000</span>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Filing Authority</span>
+                                <span class="text-sm font-bold text-gray-900">ROC Pune (MCA)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Return Card 2: FY 2023-24 -->
+                    <div class="bg-white rounded border border-gray-300 shadow-sm p-6 sm:p-8 hover:shadow-md transition">
+                        <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 pb-4 border-b border-gray-200">
+                            <div>
+                                <div class="flex flex-wrap items-center gap-2 mb-1">
+                                    <span class="text-xs bg-gray-100 text-gray-800 font-semibold px-2 py-0.5 rounded">Form No. MGT-7</span>
+                                    <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded">17 Pages</span>
+                                </div>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-900">Financial Year 2023–24 Annual Return</h3>
+                                <p class="text-xs sm:text-sm text-gray-500">Period: 01 April 2023 to 31 March 2024 &bull; AGM Date: 30 September 2024</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <a href="annual_reports/orgpedia_annual_return_23-24.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded shadow-sm transition">
+                                    <span>Download PDF (1.5 MB)</span>
+                                    <span>&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 text-xs">
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Turnover</span>
+                                <span class="text-sm font-bold text-gray-900">₹0</span>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Net Worth</span>
+                                <span class="text-sm font-bold text-gray-900">-₹71,829</span>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Paid-up Capital</span>
+                                <span class="text-sm font-bold text-gray-900">₹1,00,000</span>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Filing Authority</span>
+                                <span class="text-sm font-bold text-gray-900">ROC Pune (MCA)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Return Card 3: FY 2022-23 -->
+                    <div class="bg-white rounded border border-gray-300 shadow-sm p-6 sm:p-8 hover:shadow-md transition">
+                        <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 pb-4 border-b border-gray-200">
+                            <div>
+                                <div class="flex flex-wrap items-center gap-2 mb-1">
+                                    <span class="text-xs bg-gray-100 text-gray-800 font-semibold px-2 py-0.5 rounded">Form No. MGT-7</span>
+                                    <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded">16 Pages</span>
+                                    <span class="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded">First Financial Year</span>
+                                </div>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-900">Financial Year 2022–23 Annual Return</h3>
+                                <p class="text-xs sm:text-sm text-gray-500">Period: 31 January 2022 to 31 March 2023 &bull; AGM Date: 11 September 2023</p>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <a href="annual_reports/orgpedia_annual_return_22-23.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded shadow-sm transition">
+                                    <span>Download PDF (1.9 MB)</span>
+                                    <span>&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 text-xs">
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Turnover</span>
+                                <span class="text-sm font-bold text-gray-900">₹0</span>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Net Worth</span>
+                                <span class="text-sm font-bold text-gray-900">-₹49,718</span>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Paid-up Capital</span>
+                                <span class="text-sm font-bold text-gray-900">₹1,00,000</span>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                                <span class="text-gray-500 block mb-0.5">Filing Authority</span>
+                                <span class="text-sm font-bold text-gray-900">ROC Pune (MCA)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Corporate Information & Verification Section -->
+            <section class="bg-gray-200 p-6 sm:p-8 rounded border border-gray-300 mb-10">
+                <div class="flex flex-col md:flex-row justify-between gap-6">
+                    <div class="flex-1">
+                        <h3 class="text-base font-bold text-gray-900 mb-2">Corporate Information & Registration</h3>
+                        <div class="space-y-2 text-xs text-gray-700 leading-relaxed mb-4">
+                            <p><b>Company Name:</b> ORGPEDIA FOUNDATION</p>
+                            <p><b>Corporate Identity Number (CIN):</b> U80902PN2022NPL208087</p>
+                            <p><b>Class / Category:</b> Private Company Limited by Shares (Section 8 Non-Profit)</p>
+                            <p><b>Registered Office:</b> Flat No. 501, S. No. 39/31, Umalaxmi Niwas, Prabhat Road, Lane 9, Pune, Maharashtra 411004, India</p>
+                            <p><b>Board of Directors:</b> Mukund Suresh Deshpande (DIN: 07480555), Nidhi Dhanju (DIN: 09485541)</p>
+                        </div>
+                        <p class="text-xs text-gray-600">
+                            Public statutory filings can also be verified directly on the Ministry of Corporate Affairs portal (<a href="https://www.mca.gov.in" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold hover:underline">mca.gov.in</a>).
+                        </p>
+                    </div>
+                    <div class="w-full md:w-80 flex-shrink-0 bg-white p-5 rounded border border-gray-300">
+                        <h4 class="text-xs font-bold text-gray-800 uppercase tracking-wider mb-2">Get Involved</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-4">
+                            Orgpedia is powered entirely by open-source contributors and volunteers dedicated to public data transparency.
+                        </p>
+                        <a href="mailto:info@orgpedia.in?subject=Volunteering with Orgpedia" class="inline-block w-full text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs px-4 py-2.5 rounded shadow-sm transition">
+                            Contact Us to Volunteer &rarr;
+                        </a>
+                    </div>
+                </div>
+            </section>
+
         </div>
 
-        <!-- Footer Bottom -->
+        <!-- Footer -->
         <footer>
-            <div class="bg-gray-200 w-full p-5 z-50 relative hidden sm:block">
-                <div class="flex flex-col sm:flex-row items-center gap-2.5 text-gray-500 text-sm">
-                    <img src="i/lf-en.svg" alt="">
-                    <div class="flex">
-                        <p class="xs:border-l xs:border-r border-gray-500 px-2.5 hover:underline"><a
-                                href="disclaimer.html">Disclaimer</a></p>
-
+            <div class="bg-gray-200 p-5 z-50 relative border-t border-gray-300">
+                <div class="container max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-gray-600 text-xs">
+                    <div class="flex items-center gap-3">
+                        <img src="i/lf-en.svg" alt="Orgpedia Logo" class="h-6">
+                        <span>&bull;</span>
+                        <a href="disclaimer.html" class="hover:underline">Disclaimer</a>
+                        <span>&bull;</span>
+                        <a href="annual_returns.html" class="hover:underline">Annual Returns</a>
+                        <span>&bull;</span>
+                        <a href="mailto:info@orgpedia.in?subject=Website Feedback" class="hover:underline">Report an Error</a>
                     </div>
-                    <div class="flex gap-2">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current" viewBox="0 0 24 24" width="30"
-                                height="30">
-                                <path fill="none" d="M0 0h24v24H0z" />
-                                <path
-                                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 3c1.82 0 3.413.973 4.288 2.428l-1.714 1.029A3 3 0 1 0 12 15a2.998 2.998 0 0 0 2.573-1.456l1.715 1.028A4.999 4.999 0 0 1 7 12c0-2.76 2.24-5 5-5z" />
-                            </svg>
-                        </span>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current" viewBox="0 0 24 24" width="30"
-                                height="30">
-                                <path fill="none" d="M0 0h24v24H0z" />
-                                <path
-                                    d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm2 6a1 1 0 0 1 1 1v4h-1.5v4h-3v-4H9v-4a1 1 0 0 1 1-1h4zm-2-5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" />
-                            </svg>
-                        </span>
+                    <div class="flex items-center gap-4">
+                        <div onclick="location.href='https://github.com/orgpedia';" style="cursor: pointer;" class="flex items-center gap-1.5 hover:underline">
+                            <span>View on GitHub</span>
+                            <img src="i/gh.svg" class="w-4 h-4" alt="GitHub">
+                        </div>
+                        <div class="flex gap-1 items-center" style="cursor: pointer;" onclick="location.href='https://creativecommons.org/licenses/by/4.0/'">
+                            <img src="i/cc-1.svg" class="h-4" alt="CC">
+                            <img src="i/cc-2.svg" class="h-4" alt="BY">
+                        </div>
                     </div>
                 </div>
             </div>
-	    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4b28ac948b94411393435f9ff3e233ef"}'></script>
+            <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "4b28ac948b94411393435f9ff3e233ef"}'></script>
         </footer>
     </body>
 
