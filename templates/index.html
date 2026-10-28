@@ -6,6 +6,49 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Orgpedia: Information Extraction for Public Good</title>
+        <link rel="canonical" href="https://www.orgpedia.in/">
+        <meta name="description" content="Making Indian government data open, legible, and actionable through AI-powered document intelligence">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Orgpedia Foundation">
+        <meta property="og:url" content="https://www.orgpedia.in/">
+        <meta property="og:title" content="Orgpedia: Information Extraction for Public Good">
+        <meta property="og:description" content="Making Indian government data open, legible, and actionable through AI-powered document intelligence">
+        <meta property="og:image" content="https://www.orgpedia.in/i/og-preview.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Orgpedia: Information Extraction for Public Good">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Orgpedia: Information Extraction for Public Good">
+        <meta name="twitter:description" content="Making Indian government data open, legible, and actionable through AI-powered document intelligence">
+        <meta name="twitter:image" content="https://www.orgpedia.in/i/og-preview.png">
+
+        <!-- JSON-LD Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "NGO",
+            "name": "Orgpedia Foundation",
+            "alternateName": "Orgpedia",
+            "url": "https://www.orgpedia.in",
+            "logo": "https://www.orgpedia.in/i/l-en.svg",
+            "description": "Making Indian government data open, legible, and actionable through AI-powered document intelligence",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Pune",
+                "addressRegion": "Maharashtra",
+                "addressCountry": "IN"
+            },
+            "sameAs": [
+                "https://github.com/orgpedia",
+                "https://huggingface.co/orgpedia",
+                "https://archive.org/details/@orgpedia"
+            ]
+        }
+        </script>
 
         <!-- CSS Link -->
         <link rel="stylesheet" href="c/output.css">
@@ -111,7 +154,7 @@
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
                     <div>
                         <h2 class="text-xl sm:text-2xl font-bold text-gray-900">Document Intelligence Tracker</h2>
-                        <p class="text-sm text-gray-600">The end-to-end processing funnel from scanned government documents to  consumable websites.</p>
+                        <p class="text-sm text-gray-600">The end-to-end processing funnel from scanned government documents to consumable websites.</p>
                     </div>
                     <a href="tracker.html" class="text-sm font-semibold text-blue-600 hover:text-blue-800 hover:underline mt-2 sm:mt-0">View Detailed Breakdown & Methodology &rarr;</a>
                 </div>
@@ -126,7 +169,7 @@
                         <div class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2">185,248</div>
                         <h3 class="text-base font-bold text-blue-600 mb-2">Documents Processed</h3>
                         <p class="text-xs text-gray-600 leading-relaxed">
-                            Total volume of government documents downloaded, organized and made available on Github, Huggingface and Archive.org.
+                            Total volume of government documents downloaded, organized and made available on GitHub, Hugging Face and Archive.org.
                         </p>
                     </div>
 
@@ -136,9 +179,9 @@
                             <span class="text-xs font-bold uppercase tracking-wider text-gray-500">Stage 2: Extraction & Layout</span>
                             <span class="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-semibold">GovDoc Layers</span>
                         </div>
-                        <div class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2">104,509</div>
+                        <div class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2">104,549</div>
                         <h3 class="text-base font-bold text-blue-600 mb-2">Information Extracted</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">n
+                        <p class="text-xs text-gray-600 leading-relaxed">
                             Total volume of documents from which structured records and relevant entities are extracted and translated.
                         </p>
                     </div>
@@ -303,14 +346,14 @@
                         <a href="mailto:info@orgpedia.in?subject=Website Feedback" class="hover:underline">Report an Error</a>
                     </div>
                     <div class="flex items-center gap-4">
-                        <div onclick="location.href='https://github.com/orgpedia';" style="cursor: pointer;" class="flex items-center gap-1.5 hover:underline">
+                        <a href="https://github.com/orgpedia" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 hover:underline">
                             <span>View on GitHub</span>
                             <img src="i/gh.svg" class="w-4 h-4" alt="GitHub">
-                        </div>
-                        <div class="flex gap-1 items-center" style="cursor: pointer;" onclick="location.href='https://creativecommons.org/licenses/by/4.0/'">
+                        </a>
+                        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" class="flex gap-1 items-center hover:opacity-80">
                             <img src="i/cc-1.svg" class="h-4" alt="CC">
                             <img src="i/cc-2.svg" class="h-4" alt="BY">
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
